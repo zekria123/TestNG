@@ -1,0 +1,5 @@
+tests\CreateAccount.class
+tests\HotelLogin.class
+tests\TestNGAssertionConcepts.class
+tests\SmokeTest.class
+tests\TestNGConcepts.class

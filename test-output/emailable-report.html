@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Parallel Testing Suite</th></tr>
+<tr><td><a href="#t0">Parallel Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,631</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ParallelExecution</td><td><a href="#m0">edgeBrowser</a></td><td rowspan="1">1594583685816</td><td rowspan="1">4351</td></tr><tr><th colspan="4">Parallel Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.ParallelExecution</td><td><a href="#m1">chromeBrowser</a></td><td rowspan="1">1594583685817</td><td rowspan="1">8610</td></tr><tr class="passedeven"><td><a href="#m2">fireFoxBrowser</a></td><td rowspan="1">1594583685817</td><td rowspan="1">8611</td></tr><tr class="passedeven"><td><a href="#m3">internetExpBrowser</a></td><td rowspan="1">1594583685816</td><td rowspan="1">4451</td></tr></tbody>
+</table>
+<h2>Parallel Tests</h2><h3 id="m0">tests.ParallelExecution#edgeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:725)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:548)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at tests.ParallelExecution.edgeBrowser(ParallelExecution.java:43)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.checkPreInstalledVersion(WebDriverManager.java:607)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:508)
+	... 15 more
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ParallelExecution#chromeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ParallelExecution#fireFoxBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ParallelExecution#internetExpBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
